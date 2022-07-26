@@ -9,6 +9,7 @@
   "author": "Omkar Ghodake",
   "license": "ISC",
   "dependencies": {
+    "@truffle/hdwallet-provider": "^2.0.12",
     "ganache-cli": "^6.12.2",
     "mocha": "^10.0.0",
     "nodemon": "^2.0.19",
