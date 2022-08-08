@@ -26,12 +26,12 @@ describe('Inbox', () => {
 		assert.ok(inbox.options.address);
 	});
 
-	it('it has a default message', async () => {
+	it('Has a default message', async () => {
 		const message = await inbox.methods.message().call();
 		assert.equal(INITIAL_STRING, message);
 	});
 
-	it('can change the message', async () => {
+	it('Can change the message', async () => {
 		const txn = await inbox.methods.setMessage('Bye there').send({ from: fetchedAccounts[0] });
 		// console.log(txn)
 		const message = await inbox.methods.message().call();
